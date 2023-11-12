@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <title>AutoWatch</title>
+  </head>
+  <body>
+    <!-- Sign In -->
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="signInModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1"
+                  >Email address</label
+                >
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="form2Example2"
+                  class="form-control"
+                />
+                <label class="form-label" for="form2Example2">Password</label>
+              </div>
+
+              <!-- 2 column grid layout for inline styling -->
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="form2Example31"
+                      checked
+                    />
+                    <label class="form-check-label" for="form2Example31">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <!-- Simple link -->
+                  <a href="#!">Forgot password?</a>
+                </div>
+              </div>
+
+              <!-- Submit button -->
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-primary d-block mb-4 w-100"
+                >
+                  Sign in
+                </button>
+              </div>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>Not a member? <a href="#!">Register</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./src/logo.png" alt="Logo" class="logo" />
+        </a>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="./index.html">Home</a>
+          <a class="nav-item nav-link" href="./movies.html">Movies</a>
+          <a class="nav-item nav-link" href="./about.html">About</a>
+          <a class="nav-item nav-link" href="./celebrity.html"
+            >Celebrity Profile</a
+          >
+
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <a
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#signInModal"
+            href="#"
+            >Sign in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section id="reviewers">
+      <div class="container">
+        <h1 class="pt-4" style="font-size: 4rem">Our Reviewers:</h1>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="col">
+            <div class="card">
+              <img
+                src="./src/reviewers/akib.jpg"
+                class="card-img-top card-reviewer"
+                alt="Akib"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Akib Reza</h5>
+                <p class="card-text">
+                  Hey there, I'm Akib, and I'm your dedicated guide to the
+                  spine-tingling world of horror. My fascination with all things
+                  macabre has led me down a dark and twisted path, where I've
+                  explored the depths of horror literature and cinema. With
+                  every page turned and every shadowy scene dissected, I'm here
+                  to offer you insights, recommendations, and my own
+                  hair-raising experiences. If you're looking for a good scare
+                  or a glimpse into the supernatural, follow me into the heart
+                  of darkness, and together, we'll uncover the terrifying
+                  secrets of the horror genre.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./src/reviewers/autoshi.jpg"
+                class="card-img-top card-reviewer"
+                alt="autoshi"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Autoshi Aunkita</h5>
+                <p class="card-text">
+                  안녕하세요 (Hello), I'm Autoshi, your go-to source for
+                  everything Korean entertainment. My fascination with South
+                  Korean culture, from K-dramas to K-pop, knows no bounds. I've
+                  immersed myself in the world of Korean media, and now, I'm
+                  thrilled to share my passion with you. Whether you're a
+                  devoted K-drama enthusiast or a K-pop addict, I'm here to
+                  provide you with reviews and recommendations that celebrate
+                  the vibrant and diverse world of Korean entertainment. Join me
+                  on this exciting journey through the captivating realm of
+                  Korean pop culture!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="./src/reviewers/chatok.jpg"
+                class="card-img-top card-reviewer"
+                alt="chatok"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chatok Junior</h5>
+                <p class="card-text">
+                  Hi, I'm Sakib, and I live for the adrenaline-pumping thrills
+                  of the action genre. With a background in martial arts and a
+                  deep love for explosive blockbusters, I'm your ultimate source
+                  for all things action-packed. From heart-pounding stunts to
+                  intense combat sequences, I dissect every moment to bring you
+                  the most exhilarating experiences in the world of action.
+                  Buckle up, because together, we're diving headfirst into a
+                  world of high-octane adventures, and I'll be your trusty guide
+                  through the pulse-pounding chaos of action entertainment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="#">AutoWatch</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery  -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  </body>
+</html>

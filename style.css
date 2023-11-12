@@ -1,0 +1,72 @@
+.logo {
+  height: 60px;
+}
+
+nav {
+  font-family: Roboto;
+}
+
+nav a {
+  margin: 0 10px; /* Adding space around navbar buttons to make it look better */
+}
+
+@media (min-width: 1200px) {
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1337px; /* Resizing boostrap container */
+}
+
+.custom-background {
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+}
+
+a {
+  text-decoration: none;
+}
+
+#featured,
+#reviewers,
+#celebrity,
+#top {
+  background-color: #333;
+  color: white;
+  font-family: Oswald;
+}
+
+#featured h2 {
+  font-size: 4rem;
+  -webkit-text-stroke: 1px #000;
+}
+
+.card-img-custom {
+  height: 200px; /* Adjust this value as needed */
+  object-fit: cover; /* This will cover the area without distorting the image */
+  width: 100%; /* Ensure the image covers the full width of its container */
+}
+
+.card-reviewer {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  object-position: top;
+}
+
+.overlay {
+  filter: brightness(0.5);
+}
+
+#movies {
+  color: white;
+  font-family: Oswald;
+}
+
+.movies {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
